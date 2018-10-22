@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-})->name('home');
+Route::get('/', 'PagesController')->name('home');
 
 Route::get('/about', function () {
     return view('pages.about');
